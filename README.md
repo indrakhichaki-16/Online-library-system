@@ -35,7 +35,7 @@ src/
     store.js             # Redux store setup
   index.css              # Global styles
 
-## Getting Started
+## Running the application
 1. Install dependencies:
    ```bash
    npm install
