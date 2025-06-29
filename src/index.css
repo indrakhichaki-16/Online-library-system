@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+body {
+  /* Light gradient background */
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  min-height: 100vh; /* Ensure gradient covers the full page */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Nav bar gradient and blur */
+.nav-blur-gradient {
+  background: linear-gradient(90deg, #fdf4f5, #f9f8fc);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+}
+
+/* Nav menu underline hover */
+.nav-link {
+  position: relative;
+  transition: color 0.2s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -2px;
+  height: 2px;
+  background: linear-gradient(90deg, #0000008d 100%);
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+.nav-link:hover::after, .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* Book card hover effect */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  border: 2px solid transparent;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px 0 rgba(171, 71, 188, 0.15);
+  border-color: #bebfc1;
+  z-index: 2;
+}
+
+/* Font for h1 in home page */
+.home-h1 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+/* Styling 'available book categories' container */
+.glass-container {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+.glass-wide {
+  max-width: 900px;
+  width: 90vw;
+}
