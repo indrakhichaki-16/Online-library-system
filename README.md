@@ -43,7 +43,6 @@ src/
 ```
 
 ## Running the application
-```
 1. Install dependencies:
    ```bash
    npm install
@@ -53,7 +52,6 @@ src/
    npm run dev
    ```
 3. Application is available at [http://localhost:5173] in your browser by default.
-```
 
 ## Website design
 - Home page is designed to show the available book categories and the most popular books available with a rating of 4.7+/5
