@@ -20,6 +20,7 @@ A React-based online library system that allows users to browse, search, and add
 `https://github.com/indrakhichaki-16/Online-library-system`
 
 ## Project Structure
+```
 src/
   App.jsx                # Main app and routing
   main.jsx               # React entry point
@@ -39,8 +40,10 @@ src/
     mockBook.js          # Mock book data
     store.js             # Redux store setup
   index.css              # Global styles
+```
 
 ## Running the application
+```
 1. Install dependencies:
    ```bash
    npm install
@@ -50,6 +53,7 @@ src/
    npm run dev
    ```
 3. Application is available at [http://localhost:5173] in your browser by default.
+```
 
 ## Website design
 - Home page is designed to show the available book categories and the most popular books available with a rating of 4.7+/5
